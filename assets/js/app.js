@@ -13,7 +13,7 @@ let inputText = document.querySelector("#inputName");
 // const inputValue = inputText.value;
 const clickFunc = () => {
         if (!inputText.value) {
-            toasti("Khaliye");
+            toasti("you didn't enter any chars");
             return;
         } else {
             fetch(API_URL + inputText.value, { method: "GET" })
@@ -21,13 +21,20 @@ const clickFunc = () => {
                     return response.json();
                 })
                 .then((data) => {
-                    console.log(data)
-                    name.innerHTML = data.name;
-                    userName.innerHTML = "@" + data.login;
-                    followers.innerHTML = data.followers;
-                    following.innerHTML = data.following;
-                    twitterProfile.src = data.avatar_url;
-                    hireableCheck(data.hireable);
+                    if (data.message == "Not Found") {
+                        toasti("This username has not been registered yet");
+                        return;
+
+                    } else {
+                        console.log(data)
+                        name.innerHTML = data.name;
+                        userName.innerHTML = "@" + data.login;
+                        followers.innerHTML = data.followers;
+                        following.innerHTML = data.following;
+                        twitterProfile.src = data.avatar_url;
+                        hireableCheck(data.hireable);
+                    }
+
                 });
 
 
