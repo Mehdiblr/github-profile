@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter-API</title>
+    <!-- style css  -->
+    <link href="style.css" rel="stylesheet">
+    <!-- tostify css  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/lib/toastify.css">
+</head>
+
+<body>
+    <main>
+        <section id="form">
+            <!-- <form method="get" action="#"> -->
+            <div class="form-group">
+                <label for="inputName">Enter Your Twitter ID</label>
+                <!-- input name text box  -->
+                <input type="text" name="name" id="inputName" value="octocat" />
+                <!-- submit button  -->
+                <button type="button" onclick="clickFunc()">Submit</button> </div>
+            <!-- </form> -->
+        </section>
+        <section id="result">
+
+            <div class="twitter-card">
+                <div class="left-card">
+                    <img width="120" height="120" src="assets/img/avt-2.jpg" id="twitter-profile">
+                    <div class="twitter-info">
+                        <h3 id="twitter-name">Mehdi Bolourian
+                        </h3>
+                        <!-- <a href="" id="profile-link">Visit them profile</a> -->
+                        <h4 id="twitter-username">@_mblr</h4>
+                        <span><strong id="twitter-post">1.965</strong> Posts </span>
+                        <span><strong id="twitter-follower">1.965</strong> Followers</span>
+
+                        <span><strong id="twitter-following">1.965</strong> Following </span>
+
+                    </div>
+                </div>
+                <div class="right-card"></div>
+            </div>
+        </section>
+    </main>
+    <!-- tostify javascript  -->
+    <script type="text/javascript" src="assets/js/lib/toastify.js"></script>
+    <!-- app js  -->
+    <script src=" assets/js/app.js "></script>
+</body>
+
+</html>
