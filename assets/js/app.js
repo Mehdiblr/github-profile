@@ -23,7 +23,7 @@ const clickFunc = () => {
                 .then((data) => {
                     console.log(data)
                     name.innerHTML = data.name;
-                    userName.innerHTML = data.login;
+                    userName.innerHTML = "@" + data.login;
                     followers.innerHTML = data.followers;
                     following.innerHTML = data.following;
                     twitterProfile.src = data.avatar_url;
