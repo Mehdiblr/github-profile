@@ -12,6 +12,25 @@ main section .form-group {
   background: aliceblue;
 }
 
+main section .form-group input[type=text] {
+  border: 1px solid #b1b1b1;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  font-family: inherit;
+}
+
+main section .form-group button[type=button] {
+  border: 1px solid #b4b4b4;
+  padding: 0.3rem;
+  background: whitesmoke;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+main section .form-group > button[type=button]:hover {
+  border-radius: 0.3rem;
+}
+
 section#result {
   width: 960px;
   margin: auto;
@@ -56,10 +75,15 @@ section#result div.twitter-card .left-card > i {
   bottom: 12px;
   left: 92px;
   color: darkgreen;
+  font-size: 1.7rem;
 }
 
 section#result div.twitter-card .left-card img {
   border-radius: 50%;
+  border: 1px solid #3f51b5;
+  padding: 0.4rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 section#result div.twitter-card .left-card .twitter-info {
