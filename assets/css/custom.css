@@ -3,24 +3,13 @@ main section {
   margin: auto;
 }
 
-main section form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main section form input[type=text] {
-  font-family: inherit;
+main section .form-group {
+  margin: 0 auto;
+  width: 40rem;
+  padding: 5rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background: aliceblue;
 }
 
 section#result {

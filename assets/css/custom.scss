@@ -3,14 +3,12 @@ main {
     section {
         width: 960px;
         margin: auto;
-        form {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            input[type=text] {
-                font-family: inherit;
-            }
+        .form-group {
+            margin: 0 auto;
+            width: 40rem;
+            padding: 5rem;
+            box-sizing: content-box;
+            background: aliceblue;
         }
     }
 }
