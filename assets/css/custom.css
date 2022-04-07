@@ -42,12 +42,20 @@ section#result div.twitter-card {
 }
 
 section#result div.twitter-card .left-card {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+section#result div.twitter-card .left-card > i {
+  position: absolute;
+  bottom: 12px;
+  left: 92px;
+  color: darkgreen;
 }
 
 section#result div.twitter-card .left-card img {
@@ -82,5 +90,15 @@ section#result div.twitter-card .left-card .twitter-info span {
 
 section#result div.twitter-card .left-card .twitter-info span strong {
   color: #e91e63;
+}
+
+section#result div.twitter-card .right-card span {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: aliceblue;
+}
+
+section#result div.twitter-card .right-card span:last-child {
+  background-color: aqua;
 }
 /*# sourceMappingURL=custom.css.map */

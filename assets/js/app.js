@@ -6,37 +6,42 @@ const profileLink = document.querySelector("#profile-link")
 const twitterPost = document.querySelector("twitter-post");
 const followers = document.querySelector("#twitter-follower")
 const following = document.querySelector("#twitter-following")
+const hireable = document.querySelector("#badge")
 
 let submit = document.querySelector("#submit");
 let inputText = document.querySelector("#inputName");
 // const inputValue = inputText.value;
 const clickFunc = () => {
-    if (!inputText.value) {
-        toasti("Khaliye");
-        return;
+        if (!inputText.value) {
+            toasti("Khaliye");
+            return;
+        } else {
+            fetch(API_URL + inputText.value, { method: "GET" })
+                .then(function(response) {
+                    return response.json();
+                })
+                .then((data) => {
+                    console.log(data)
+                    name.innerHTML = data.name;
+                    userName.innerHTML = data.login;
+                    followers.innerHTML = data.followers;
+                    following.innerHTML = data.following;
+                    twitterProfile.src = data.avatar_url;
+                    hireableCheck(data.hireable);
+                });
+
+
+        }
+    }
+    // hireable func
+function hireableCheck(hireStatus) {
+    if (!hireStatus) {
+        hireable.classList.add("fa-window-close")
     } else {
-        // console.log(API_URL + inputText.value)
-        fetch(API_URL + inputText.value, { method: "GET" })
-            .then(function(response) {
-                return response.json();
-            })
-            .then((data) => {
-                console.log(data)
-                name.innerHTML = data.name;
-                userName.innerHTML = data.login;
-                followers.innerHTML = data.followers;
-                following.innerHTML = data.following;
-                // profileLink.href = data.html_url;
-                twitterProfile.src = data.avatar_url;
-
-            });
-        // console.log(API_URL + inputText.value)
-
-
+        hireable.classList.add("fa-check-square")
     }
 }
-
-
+// toastify 
 const toasti = (textValue) => {
     Toastify({
         text: textValue,

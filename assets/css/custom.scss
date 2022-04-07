@@ -28,8 +28,15 @@ section#result {
         justify-content: space-between;
         align-content: center;
         .left-card {
+            position: relative;
             display: flex;
             align-items: center;
+            >i {
+                position: absolute;
+                bottom: 12px;
+                left: 92px;
+                color: darkgreen;
+            }
             img {
                 border-radius: 50%;
             }
@@ -56,6 +63,16 @@ section#result {
                         color: #e91e63
                     }
                 }
+            }
+        }
+        .right-card {
+            span {
+                padding: 1rem;
+                border-radius: 0.6rem;
+                background-color: aliceblue;
+            }
+            span:last-child {
+                background-color: aqua;
             }
         }
     }
