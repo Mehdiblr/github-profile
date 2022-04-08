@@ -12,7 +12,7 @@ let submit = document.querySelector("#submit");
 let inputText = document.querySelector("#inputName");
 // const inputValue = inputText.value;
 const clickFunc = () => {
-    if (!inputText.value || " ") {
+    if (!inputText.value) {
         toasti("you didn't enter any chars");
         return;
     } else {
