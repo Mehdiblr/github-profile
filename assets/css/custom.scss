@@ -66,15 +66,15 @@ section#result {
                     font-weight: 500;
                 }
                 >a {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     font-weight: 500;
                     color: #b1b1b1;
-                    text-decoration: underline;
-                }
-                h4 {
+                    font-family: inherit;
+                    text-decoration: none;
                     padding-bottom: 0.5rem;
-                    color: #b1b1b1;
-                    font-weight: 300;
+                }
+                >a:hover {
+                    color: black;
                 }
                 span {
                     color: #b1b1b1;

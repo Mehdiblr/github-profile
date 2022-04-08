@@ -30,6 +30,7 @@ const clickFunc = () => {
                     nameCheck(data.name);
                     gitBioCkeck(data.bio);
                     userName.innerHTML = "@" + data.login;
+                    userName.href = data.html_url;
                     followers.innerHTML = data.followers;
                     following.innerHTML = data.following;
                     twitterProfile.src = data.avatar_url;
@@ -45,7 +46,7 @@ const clickFunc = () => {
 //Git Hib bio Ckeck
 function gitBioCkeck(gitBioStatus) {
     if (!gitBioStatus) {
-        gitBio.innerHTML = "";
+        gitBio.innerHTML = "They don't have any bio !";
         return;
     } else {
         gitBio.innerHTML = gitBioStatus;

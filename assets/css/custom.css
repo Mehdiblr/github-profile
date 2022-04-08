@@ -96,16 +96,16 @@ section#result div.twitter-card .left-card .twitter-info h3 {
 }
 
 section#result div.twitter-card .left-card .twitter-info > a {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: #b1b1b1;
-  text-decoration: underline;
+  font-family: inherit;
+  text-decoration: none;
+  padding-bottom: 0.5rem;
 }
 
-section#result div.twitter-card .left-card .twitter-info h4 {
-  padding-bottom: 0.5rem;
-  color: #b1b1b1;
-  font-weight: 300;
+section#result div.twitter-card .left-card .twitter-info > a:hover {
+  color: black;
 }
 
 section#result div.twitter-card .left-card .twitter-info span {
