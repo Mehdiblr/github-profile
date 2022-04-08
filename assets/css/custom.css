@@ -116,6 +116,10 @@ section#result div.twitter-card .left-card .twitter-info span strong {
   color: #e91e63;
 }
 
+section#result div.twitter-card .left-card .twitter-info p {
+  padding-bottom: 0.5rem;
+}
+
 section#result div.twitter-card .right-card span {
   padding: 1rem;
   border-radius: 0.6rem;
