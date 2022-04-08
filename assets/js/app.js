@@ -45,7 +45,7 @@ const clickFunc = () => {
 
 //Git Hib bio Ckeck
 function gitBioCkeck(gitBioStatus) {
-    if (!gitBioStatus) {
+    if (!gitBioStatus || " ") {
         gitBio.innerHTML = "They don't have any bio !";
         return;
     } else {
