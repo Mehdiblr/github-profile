@@ -63,10 +63,12 @@ function nameCheck(dataName) {
 }
 // hireable func
 function hireableCheck(hireStatus) {
-    if (hireStatus == false) {
-        hireable.classList.add("fa-window-close")
+    if (hireStatus == null) {
+        hireable.classList.add("fa-window-close");
+        hireable.classList.add("badgeComplete")
     } else {
-        hireable.classList.add("fa-check-square")
+        hireable.classList.add("fa-check-square");
+        hireable.classList.add("badgeComplete")
     }
 }
 // toastify 

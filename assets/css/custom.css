@@ -72,10 +72,16 @@ section#result div.twitter-card .left-card {
 
 section#result div.twitter-card .left-card > i {
   position: absolute;
-  bottom: 12px;
-  left: 92px;
+  bottom: 11px;
+  left: 96px;
   color: darkgreen;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
+}
+
+section#result div.twitter-card .left-card .badgeComplete {
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 50%;
 }
 
 section#result div.twitter-card .left-card img {
